@@ -8,6 +8,8 @@ import 'package:flutter_cbt_syarif_app/presentation/auth/bloc/logout/logout_bloc
 import 'package:flutter_cbt_syarif_app/presentation/auth/pages/login_page.dart';
 import 'package:flutter_cbt_syarif_app/presentation/home/pages/home_page.dart';
 import 'package:flutter_cbt_syarif_app/presentation/home/widgets/nav_menu.dart';
+import 'package:flutter_cbt_syarif_app/presentation/materi/pages/materi_page.dart';
+import 'package:flutter_cbt_syarif_app/presentation/profile/pages/profile_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({super.key});
@@ -21,9 +23,9 @@ class _DashboardPageState extends State<DashboardPage> {
 
   final List<Widget> _pages = [
     const HomePage(),
-    const Center(child: Text('Materi')),
+    const MateriPage(),
     const Center(child: Text('Notif')),
-    const LogoutWidget(),
+    const ProfilePage(),
   ];
 
   void _onItemtapped(int index) {

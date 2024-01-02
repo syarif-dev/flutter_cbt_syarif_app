@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cbt_syarif_app/core/assets/assets.gen.dart';
+import 'package:flutter_cbt_syarif_app/core/extensions/build_context_ext.dart';
+import 'package:flutter_cbt_syarif_app/presentation/home/pages/about_us_page.dart';
+import 'package:flutter_cbt_syarif_app/presentation/home/pages/tips_and_tricks_page.dart';
 import 'package:flutter_cbt_syarif_app/presentation/home/widgets/header_home.dart';
 import 'package:flutter_cbt_syarif_app/presentation/home/widgets/menu_home.dart';
 import 'package:flutter_cbt_syarif_app/presentation/home/widgets/title_section.dart';
+import 'package:flutter_cbt_syarif_app/presentation/materi/pages/materi_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -37,15 +41,21 @@ class _HomePageState extends State<HomePage> {
               MenuHome(
                   imagePath: Assets.images.menu.aboutUs.path,
                   label: 'About Us',
-                  onPressed: () {}),
+                  onPressed: () {
+                    context.push(const AboutUsPage());
+                  }),
               MenuHome(
                   imagePath: Assets.images.menu.tips.path,
                   label: 'Tips & Tricks',
-                  onPressed: () {}),
+                  onPressed: () {
+                    context.push(const TipsAndTricksPage());
+                  }),
               MenuHome(
                   imagePath: Assets.images.menu.materi.path,
                   label: 'Materi',
-                  onPressed: () {}),
+                  onPressed: () {
+                    context.push(const MateriPage());
+                  }),
               MenuHome(
                   imagePath: Assets.images.menu.quiz.path,
                   label: 'Quiz',
