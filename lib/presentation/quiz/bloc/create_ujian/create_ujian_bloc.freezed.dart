@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'content_bloc.dart';
+part of 'create_ujian_bloc.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,58 +15,58 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-mixin _$ContentEvent {
+mixin _$CreateUjianEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(String id) getContentById,
+    required TResult Function() createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(String id)? getContentById,
+    TResult? Function()? createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(String id)? getContentById,
+    TResult Function()? createUjian,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetContentById value) getContentById,
+    required TResult Function(_CreateUjian value) createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetContentById value)? getContentById,
+    TResult? Function(_CreateUjian value)? createUjian,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetContentById value)? getContentById,
+    TResult Function(_CreateUjian value)? createUjian,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ContentEventCopyWith<$Res> {
-  factory $ContentEventCopyWith(
-          ContentEvent value, $Res Function(ContentEvent) then) =
-      _$ContentEventCopyWithImpl<$Res, ContentEvent>;
+abstract class $CreateUjianEventCopyWith<$Res> {
+  factory $CreateUjianEventCopyWith(
+          CreateUjianEvent value, $Res Function(CreateUjianEvent) then) =
+      _$CreateUjianEventCopyWithImpl<$Res, CreateUjianEvent>;
 }
 
 /// @nodoc
-class _$ContentEventCopyWithImpl<$Res, $Val extends ContentEvent>
-    implements $ContentEventCopyWith<$Res> {
-  _$ContentEventCopyWithImpl(this._value, this._then);
+class _$CreateUjianEventCopyWithImpl<$Res, $Val extends CreateUjianEvent>
+    implements $CreateUjianEventCopyWith<$Res> {
+  _$CreateUjianEventCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -83,7 +83,7 @@ abstract class _$$StartedImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$StartedImplCopyWithImpl<$Res>
-    extends _$ContentEventCopyWithImpl<$Res, _$StartedImpl>
+    extends _$CreateUjianEventCopyWithImpl<$Res, _$StartedImpl>
     implements _$$StartedImplCopyWith<$Res> {
   __$$StartedImplCopyWithImpl(
       _$StartedImpl _value, $Res Function(_$StartedImpl) _then)
@@ -97,7 +97,7 @@ class _$StartedImpl implements _Started {
 
   @override
   String toString() {
-    return 'ContentEvent.started()';
+    return 'CreateUjianEvent.started()';
   }
 
   @override
@@ -113,7 +113,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(String id) getContentById,
+    required TResult Function() createUjian,
   }) {
     return started();
   }
@@ -122,7 +122,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(String id)? getContentById,
+    TResult? Function()? createUjian,
   }) {
     return started?.call();
   }
@@ -131,7 +131,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(String id)? getContentById,
+    TResult Function()? createUjian,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -144,7 +144,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetContentById value) getContentById,
+    required TResult Function(_CreateUjian value) createUjian,
   }) {
     return started(this);
   }
@@ -153,7 +153,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetContentById value)? getContentById,
+    TResult? Function(_CreateUjian value)? createUjian,
   }) {
     return started?.call(this);
   }
@@ -162,7 +162,7 @@ class _$StartedImpl implements _Started {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetContentById value)? getContentById,
+    TResult Function(_CreateUjian value)? createUjian,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -172,99 +172,72 @@ class _$StartedImpl implements _Started {
   }
 }
 
-abstract class _Started implements ContentEvent {
+abstract class _Started implements CreateUjianEvent {
   const factory _Started() = _$StartedImpl;
 }
 
 /// @nodoc
-abstract class _$$GetContentByIdImplCopyWith<$Res> {
-  factory _$$GetContentByIdImplCopyWith(_$GetContentByIdImpl value,
-          $Res Function(_$GetContentByIdImpl) then) =
-      __$$GetContentByIdImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({String id});
+abstract class _$$CreateUjianImplCopyWith<$Res> {
+  factory _$$CreateUjianImplCopyWith(
+          _$CreateUjianImpl value, $Res Function(_$CreateUjianImpl) then) =
+      __$$CreateUjianImplCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$GetContentByIdImplCopyWithImpl<$Res>
-    extends _$ContentEventCopyWithImpl<$Res, _$GetContentByIdImpl>
-    implements _$$GetContentByIdImplCopyWith<$Res> {
-  __$$GetContentByIdImplCopyWithImpl(
-      _$GetContentByIdImpl _value, $Res Function(_$GetContentByIdImpl) _then)
+class __$$CreateUjianImplCopyWithImpl<$Res>
+    extends _$CreateUjianEventCopyWithImpl<$Res, _$CreateUjianImpl>
+    implements _$$CreateUjianImplCopyWith<$Res> {
+  __$$CreateUjianImplCopyWithImpl(
+      _$CreateUjianImpl _value, $Res Function(_$CreateUjianImpl) _then)
       : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? id = null,
-  }) {
-    return _then(_$GetContentByIdImpl(
-      null == id
-          ? _value.id
-          : id // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
 }
 
 /// @nodoc
 
-class _$GetContentByIdImpl implements _GetContentById {
-  const _$GetContentByIdImpl(this.id);
-
-  @override
-  final String id;
+class _$CreateUjianImpl implements _CreateUjian {
+  const _$CreateUjianImpl();
 
   @override
   String toString() {
-    return 'ContentEvent.getContentById(id: $id)';
+    return 'CreateUjianEvent.createUjian()';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$GetContentByIdImpl &&
-            (identical(other.id, id) || other.id == id));
+        (other.runtimeType == runtimeType && other is _$CreateUjianImpl);
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$GetContentByIdImplCopyWith<_$GetContentByIdImpl> get copyWith =>
-      __$$GetContentByIdImplCopyWithImpl<_$GetContentByIdImpl>(
-          this, _$identity);
+  int get hashCode => runtimeType.hashCode;
 
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() started,
-    required TResult Function(String id) getContentById,
+    required TResult Function() createUjian,
   }) {
-    return getContentById(id);
+    return createUjian();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
-    TResult? Function(String id)? getContentById,
+    TResult? Function()? createUjian,
   }) {
-    return getContentById?.call(id);
+    return createUjian?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
-    TResult Function(String id)? getContentById,
+    TResult Function()? createUjian,
     required TResult orElse(),
   }) {
-    if (getContentById != null) {
-      return getContentById(id);
+    if (createUjian != null) {
+      return createUjian();
     }
     return orElse();
   }
@@ -273,67 +246,62 @@ class _$GetContentByIdImpl implements _GetContentById {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
-    required TResult Function(_GetContentById value) getContentById,
+    required TResult Function(_CreateUjian value) createUjian,
   }) {
-    return getContentById(this);
+    return createUjian(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
-    TResult? Function(_GetContentById value)? getContentById,
+    TResult? Function(_CreateUjian value)? createUjian,
   }) {
-    return getContentById?.call(this);
+    return createUjian?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
-    TResult Function(_GetContentById value)? getContentById,
+    TResult Function(_CreateUjian value)? createUjian,
     required TResult orElse(),
   }) {
-    if (getContentById != null) {
-      return getContentById(this);
+    if (createUjian != null) {
+      return createUjian(this);
     }
     return orElse();
   }
 }
 
-abstract class _GetContentById implements ContentEvent {
-  const factory _GetContentById(final String id) = _$GetContentByIdImpl;
-
-  String get id;
-  @JsonKey(ignore: true)
-  _$$GetContentByIdImplCopyWith<_$GetContentByIdImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+abstract class _CreateUjian implements CreateUjianEvent {
+  const factory _CreateUjian() = _$CreateUjianImpl;
 }
 
 /// @nodoc
-mixin _$ContentState {
+mixin _$CreateUjianState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function(ContentResponseModel content) success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function(ContentResponseModel content)? success,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function(ContentResponseModel content)? success,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -341,40 +309,40 @@ mixin _$ContentState {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Error value) error,
     required TResult Function(_Success value) success,
+    required TResult Function(_Error value) error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
-    TResult? Function(_Error value)? error,
     TResult? Function(_Success value)? success,
+    TResult? Function(_Error value)? error,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
     TResult Function(_Success value)? success,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ContentStateCopyWith<$Res> {
-  factory $ContentStateCopyWith(
-          ContentState value, $Res Function(ContentState) then) =
-      _$ContentStateCopyWithImpl<$Res, ContentState>;
+abstract class $CreateUjianStateCopyWith<$Res> {
+  factory $CreateUjianStateCopyWith(
+          CreateUjianState value, $Res Function(CreateUjianState) then) =
+      _$CreateUjianStateCopyWithImpl<$Res, CreateUjianState>;
 }
 
 /// @nodoc
-class _$ContentStateCopyWithImpl<$Res, $Val extends ContentState>
-    implements $ContentStateCopyWith<$Res> {
-  _$ContentStateCopyWithImpl(this._value, this._then);
+class _$CreateUjianStateCopyWithImpl<$Res, $Val extends CreateUjianState>
+    implements $CreateUjianStateCopyWith<$Res> {
+  _$CreateUjianStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
@@ -391,7 +359,7 @@ abstract class _$$InitialImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<$Res>
-    extends _$ContentStateCopyWithImpl<$Res, _$InitialImpl>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$InitialImpl>
     implements _$$InitialImplCopyWith<$Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
@@ -405,7 +373,7 @@ class _$InitialImpl implements _Initial {
 
   @override
   String toString() {
-    return 'ContentState.initial()';
+    return 'CreateUjianState.initial()';
   }
 
   @override
@@ -422,8 +390,8 @@ class _$InitialImpl implements _Initial {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function(ContentResponseModel content) success,
   }) {
     return initial();
   }
@@ -433,8 +401,8 @@ class _$InitialImpl implements _Initial {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function(ContentResponseModel content)? success,
   }) {
     return initial?.call();
   }
@@ -444,8 +412,8 @@ class _$InitialImpl implements _Initial {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function(ContentResponseModel content)? success,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -459,8 +427,8 @@ class _$InitialImpl implements _Initial {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Error value) error,
     required TResult Function(_Success value) success,
+    required TResult Function(_Error value) error,
   }) {
     return initial(this);
   }
@@ -470,8 +438,8 @@ class _$InitialImpl implements _Initial {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
-    TResult? Function(_Error value)? error,
     TResult? Function(_Success value)? success,
+    TResult? Function(_Error value)? error,
   }) {
     return initial?.call(this);
   }
@@ -481,8 +449,8 @@ class _$InitialImpl implements _Initial {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
     TResult Function(_Success value)? success,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -492,7 +460,7 @@ class _$InitialImpl implements _Initial {
   }
 }
 
-abstract class _Initial implements ContentState {
+abstract class _Initial implements CreateUjianState {
   const factory _Initial() = _$InitialImpl;
 }
 
@@ -505,7 +473,7 @@ abstract class _$$LoadingImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<$Res>
-    extends _$ContentStateCopyWithImpl<$Res, _$LoadingImpl>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$LoadingImpl>
     implements _$$LoadingImplCopyWith<$Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl _value, $Res Function(_$LoadingImpl) _then)
@@ -519,7 +487,7 @@ class _$LoadingImpl implements _Loading {
 
   @override
   String toString() {
-    return 'ContentState.loading()';
+    return 'CreateUjianState.loading()';
   }
 
   @override
@@ -536,8 +504,8 @@ class _$LoadingImpl implements _Loading {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function(ContentResponseModel content) success,
   }) {
     return loading();
   }
@@ -547,8 +515,8 @@ class _$LoadingImpl implements _Loading {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function(ContentResponseModel content)? success,
   }) {
     return loading?.call();
   }
@@ -558,8 +526,8 @@ class _$LoadingImpl implements _Loading {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function(ContentResponseModel content)? success,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -573,8 +541,8 @@ class _$LoadingImpl implements _Loading {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Error value) error,
     required TResult Function(_Success value) success,
+    required TResult Function(_Error value) error,
   }) {
     return loading(this);
   }
@@ -584,8 +552,8 @@ class _$LoadingImpl implements _Loading {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
-    TResult? Function(_Error value)? error,
     TResult? Function(_Success value)? success,
+    TResult? Function(_Error value)? error,
   }) {
     return loading?.call(this);
   }
@@ -595,8 +563,8 @@ class _$LoadingImpl implements _Loading {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
     TResult Function(_Success value)? success,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -606,8 +574,122 @@ class _$LoadingImpl implements _Loading {
   }
 }
 
-abstract class _Loading implements ContentState {
+abstract class _Loading implements CreateUjianState {
   const factory _Loading() = _$LoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessImplCopyWith<$Res> {
+  factory _$$SuccessImplCopyWith(
+          _$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
+      __$$SuccessImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SuccessImplCopyWithImpl<$Res>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$SuccessImpl>
+    implements _$$SuccessImplCopyWith<$Res> {
+  __$$SuccessImplCopyWithImpl(
+      _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessImpl implements _Success {
+  const _$SuccessImpl();
+
+  @override
+  String toString() {
+    return 'CreateUjianState.success()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SuccessImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function() success,
+    required TResult Function(String message) error,
+  }) {
+    return success();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function()? success,
+    TResult? Function(String message)? error,
+  }) {
+    return success?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function()? success,
+    TResult Function(String message)? error,
+    required TResult orElse(),
+  }) {
+    if (success != null) {
+      return success();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Success value) success,
+    required TResult Function(_Error value) error,
+  }) {
+    return success(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Success value)? success,
+    TResult? Function(_Error value)? error,
+  }) {
+    return success?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Success value)? success,
+    TResult Function(_Error value)? error,
+    required TResult orElse(),
+  }) {
+    if (success != null) {
+      return success(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _Success implements CreateUjianState {
+  const factory _Success() = _$SuccessImpl;
 }
 
 /// @nodoc
@@ -621,7 +703,7 @@ abstract class _$$ErrorImplCopyWith<$Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<$Res>
-    extends _$ContentStateCopyWithImpl<$Res, _$ErrorImpl>
+    extends _$CreateUjianStateCopyWithImpl<$Res, _$ErrorImpl>
     implements _$$ErrorImplCopyWith<$Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl _value, $Res Function(_$ErrorImpl) _then)
@@ -651,7 +733,7 @@ class _$ErrorImpl implements _Error {
 
   @override
   String toString() {
-    return 'ContentState.error(message: $message)';
+    return 'CreateUjianState.error(message: $message)';
   }
 
   @override
@@ -676,8 +758,8 @@ class _$ErrorImpl implements _Error {
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
     required TResult Function() loading,
+    required TResult Function() success,
     required TResult Function(String message) error,
-    required TResult Function(ContentResponseModel content) success,
   }) {
     return error(message);
   }
@@ -687,8 +769,8 @@ class _$ErrorImpl implements _Error {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
     TResult? Function()? loading,
+    TResult? Function()? success,
     TResult? Function(String message)? error,
-    TResult? Function(ContentResponseModel content)? success,
   }) {
     return error?.call(message);
   }
@@ -698,8 +780,8 @@ class _$ErrorImpl implements _Error {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
     TResult Function()? loading,
+    TResult Function()? success,
     TResult Function(String message)? error,
-    TResult Function(ContentResponseModel content)? success,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -713,8 +795,8 @@ class _$ErrorImpl implements _Error {
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
-    required TResult Function(_Error value) error,
     required TResult Function(_Success value) success,
+    required TResult Function(_Error value) error,
   }) {
     return error(this);
   }
@@ -724,8 +806,8 @@ class _$ErrorImpl implements _Error {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
-    TResult? Function(_Error value)? error,
     TResult? Function(_Success value)? success,
+    TResult? Function(_Error value)? error,
   }) {
     return error?.call(this);
   }
@@ -735,8 +817,8 @@ class _$ErrorImpl implements _Error {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
     TResult Function(_Success value)? success,
+    TResult Function(_Error value)? error,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -746,156 +828,11 @@ class _$ErrorImpl implements _Error {
   }
 }
 
-abstract class _Error implements ContentState {
+abstract class _Error implements CreateUjianState {
   const factory _Error(final String message) = _$ErrorImpl;
 
   String get message;
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
-      throw _privateConstructorUsedError;
-}
-
-/// @nodoc
-abstract class _$$SuccessImplCopyWith<$Res> {
-  factory _$$SuccessImplCopyWith(
-          _$SuccessImpl value, $Res Function(_$SuccessImpl) then) =
-      __$$SuccessImplCopyWithImpl<$Res>;
-  @useResult
-  $Res call({ContentResponseModel content});
-}
-
-/// @nodoc
-class __$$SuccessImplCopyWithImpl<$Res>
-    extends _$ContentStateCopyWithImpl<$Res, _$SuccessImpl>
-    implements _$$SuccessImplCopyWith<$Res> {
-  __$$SuccessImplCopyWithImpl(
-      _$SuccessImpl _value, $Res Function(_$SuccessImpl) _then)
-      : super(_value, _then);
-
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? content = null,
-  }) {
-    return _then(_$SuccessImpl(
-      null == content
-          ? _value.content
-          : content // ignore: cast_nullable_to_non_nullable
-              as ContentResponseModel,
-    ));
-  }
-}
-
-/// @nodoc
-
-class _$SuccessImpl implements _Success {
-  const _$SuccessImpl(this.content);
-
-  @override
-  final ContentResponseModel content;
-
-  @override
-  String toString() {
-    return 'ContentState.success(content: $content)';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$SuccessImpl &&
-            (identical(other.content, content) || other.content == content));
-  }
-
-  @override
-  int get hashCode => Object.hash(runtimeType, content);
-
-  @JsonKey(ignore: true)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
-      __$$SuccessImplCopyWithImpl<_$SuccessImpl>(this, _$identity);
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() loading,
-    required TResult Function(String message) error,
-    required TResult Function(ContentResponseModel content) success,
-  }) {
-    return success(content);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? loading,
-    TResult? Function(String message)? error,
-    TResult? Function(ContentResponseModel content)? success,
-  }) {
-    return success?.call(content);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? loading,
-    TResult Function(String message)? error,
-    TResult Function(ContentResponseModel content)? success,
-    required TResult orElse(),
-  }) {
-    if (success != null) {
-      return success(content);
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial value) initial,
-    required TResult Function(_Loading value) loading,
-    required TResult Function(_Error value) error,
-    required TResult Function(_Success value) success,
-  }) {
-    return success(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial value)? initial,
-    TResult? Function(_Loading value)? loading,
-    TResult? Function(_Error value)? error,
-    TResult? Function(_Success value)? success,
-  }) {
-    return success?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial value)? initial,
-    TResult Function(_Loading value)? loading,
-    TResult Function(_Error value)? error,
-    TResult Function(_Success value)? success,
-    required TResult orElse(),
-  }) {
-    if (success != null) {
-      return success(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class _Success implements ContentState {
-  const factory _Success(final ContentResponseModel content) = _$SuccessImpl;
-
-  ContentResponseModel get content;
-  @JsonKey(ignore: true)
-  _$$SuccessImplCopyWith<_$SuccessImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

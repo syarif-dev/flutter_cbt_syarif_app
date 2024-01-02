@@ -7,6 +7,7 @@ import 'package:flutter_cbt_syarif_app/presentation/home/widgets/header_home.dar
 import 'package:flutter_cbt_syarif_app/presentation/home/widgets/menu_home.dart';
 import 'package:flutter_cbt_syarif_app/presentation/home/widgets/title_section.dart';
 import 'package:flutter_cbt_syarif_app/presentation/materi/pages/materi_page.dart';
+import 'package:flutter_cbt_syarif_app/presentation/quiz/pages/quiz_list_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -59,7 +60,9 @@ class _HomePageState extends State<HomePage> {
               MenuHome(
                   imagePath: Assets.images.menu.quiz.path,
                   label: 'Quiz',
-                  onPressed: () {}),
+                  onPressed: () {
+                    context.push(const QuizListPage());
+                  }),
             ],
           ),
         ],
